@@ -1,31 +1,50 @@
+% Nötig, damit LaTeX weiß, was hier eigentlich produziert wird
 \documentclass[11pt,a4paper]{article}
+% Sorgen dafür, dass z.B. Umlaute korrekt dargestellt werden
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+% Sorgt für deutsche Silbentrennung
+\usepackage[german]{babel}
+% Setzt eine moderne Schriftart
 \usepackage{lmodern}
+% Ermöglicht das verlinken innerhalb des Dokuments und auch Links 'nach außen' (Internet)
 \usepackage{hyperref}
+% Damit wird verhindert, dass Seitennummern gedruckt werden (ist aber die quick'n'dirty-Variante)
 \renewcommand{\thepage}{}
+%
+% Ab hier kommt der eigentliche Content
 \begin{document}
+%
+% Überschrift
+%
 \begin{center}
 \underline{\textbf{\Large Techniker- und Musikerschulung}}
 \end{center}
-\paragraph{Für wen} Techniker bzw. Technikverantwortliche in Gemeinden aller Art und Musiker, die in Bands spielen (oder das vorhaben) und mit Technikern zu tun haben.
-
-\noindent
-Details zum Inhalt der Schulung finden sich weiter unten.
-
-%Die erste Einheit richtet sich an alle, die in Gemeinden mit Veranstaltungstechnik zu tun haben -- wir werden uns dabei auf Tontechnik beschränken, wenn besonderes Interesse an einer Schulung zu Lichttechnik besteht, kommt auf uns zu. Die zweite Einheit konzentriert sich dann auf den Umgang 
+%
+% Text
+%
+\paragraph{Für wen} (Ton-)Techniker bzw. Technikverantwortliche in Gemeinden aller Art und Musiker, die in Bands spielen (oder das vorhaben) und mit Technikern zu tun haben.
 
 \paragraph{Wann und wo} Im Paul-Schneider-Haus (Paulinenstraße 15) in Reichenbach/Fils (\href{https://www.google.de/maps/place/Paul-Schneider-Haus/}{in Google Maps anschauen}) am Samstag, den 30.05.2015. Wir planen, morgens um 09:00 zu beginnen und werden die erste Einheit mit einem gemeinsamen Mittagessen um ca. 13:00 beenden. Die zweite Einheit ist dann ab dem Mittagessen bis ''Open End'', d. h. so lange Interesse (und Kaffee) da ist.
 
-\paragraph{Kosten} Die Schulung an sich ist kostenlos, nur für das Mittagessen und evtl. Kaffee sollten ein paar Euro mitgebracht werden.
+\paragraph{Kosten} Die Schulung an sich ist kostenlos, nur für das Mittagessen und Getränke sollten ein paar Euro mitgebracht werden.
 
-\paragraph{Inhalt} \textbf{TODO}
+\paragraph{Inhalt (erste Einheit)} Während der ersten Einheit werden Techniker und Musiker weitgehend getrennt arbeiten und es wird vor allem um Grundlagen und Tipps für die Praxis gehen. Außerdem können Fragen diskutiert werden.
+%
+% Sorgt dafür, dass der Abstand zwischen paragraph und subparagraph nur so groß wie ein normaler Zeilenumbruch ist
+\setlength{\parskip}{-15pt}
+%
+\subparagraph{Techniker} Es wird zuerst einen kurzen ''Theorieteil'' zu Akustik, der Funktion von Mikrofonen und Lautsprechern, einigen Grundlagen zum Mischen und zur Bedienung von Mischpulten geben; danach werden wir uns dann ganz praktisch (also am Mischpult) damit beschäftigen, wie man das Beste an Verständlichkeit aus einer Stimme (von Moderator, Prediger, ...) holen kann und es wird viel Platz für Fragen und Diskussion geben.
+%
+\subparagraph{Musiker} \textbf{TODO} %TODO
 
-\paragraph{Mitbringen} \textbf{TODO}
+% Paragraph-Abstand wieder resetten
+\setlength{\parskip}{0pt}
+\paragraph{Inhalt (zweite Einheit)} Die zweite Einheit richtet sich an alle Musiker, die in Bands mit Technik spielen wollen und an Techniker, die Bands abmischen wollen. Das wird fast ausschließlich ''hands on'', also ganz praktisch, stattfinden: Wir werden zusammen wie für einen normalen (Jugend-) Gottesdienst aufbauen, die Anlage einmessen, Soundcheck machen und je nachdem, ob Zeit und Interesse da ist, das Ganze für verschiedene Bandzusammenstellungen wiederholen oder eure Ideen ausprobieren.
+
+\paragraph{Mitbringen} Lust zu lernen sollte im Gepäck sein, gerne auch Fragen und eigenes Material (Mischpulte, Instrumente, Mikrofone etc.) -- dabei bitten wir darum, dass das Material deutlich gekennzeichnet ist, um es auseinander halten zu können.
+
+Insbesondere eigene Instrumente sind interessant, weil wir uns dann zum Beispiel auch mit den Feinheiten der Mikrofonierung bei unterschiedlichen Instrumenten beschäftigen können.
 
 
 \end{document}
