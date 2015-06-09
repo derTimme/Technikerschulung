@@ -1,5 +1,6 @@
 % Nötig, damit LaTeX weiß, was hier eigentlich produziert wird
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
+\usepackage[top=2.5cm,bottom=1cm,left=2.5cm,right=2.5cm]{geometry}
 % Sorgen dafür, dass z.B. Umlaute korrekt dargestellt werden
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,12 +21,14 @@
 \begin{center}
 \underline{\textbf{\Large Techniker- und Musikerschulung}}
 \end{center}
+% Spart Platz auf der Seite, damit auch alles auf A5 passt
+\setlength{\parskip}{-5pt}
 %
 % Text
 %
 \paragraph{Für wen} (Ton-)Techniker bzw. Technikverantwortliche in Gemeinden aller Art und Musiker, die in Bands spielen (oder das vorhaben) und mit Technikern zu tun haben.
 
-\paragraph{Wann und wo} Im Paul-Schneider-Haus (Paulinenstraße 15) in Reichenbach/Fils (\href{https://www.google.de/maps/place/Paul-Schneider-Haus/}{in Google Maps anschauen}) am Samstag, den 30.05.2015. Wir planen, morgens um 09:00 zu beginnen und werden die erste Einheit mit einem gemeinsamen Mittagessen um ca. 13:00 beenden. Die zweite Einheit ist dann ab dem Mittagessen bis ''Open End'', d. h. so lange Interesse (und Kaffee) da ist.
+\paragraph{Wann und wo} Im Paul-Schneider-Haus (Paulinenstraße 15) in Reichenbach/Fils (\href{https://www.google.de/maps/place/Paul-Schneider-Haus/}{in Google Maps anschauen}) am Samstag, den 13.06.2015. Wir planen, morgens um 09:00 zu beginnen und werden die erste Einheit mit einem gemeinsamen Mittagessen um ca. 13:00 beenden. Die zweite Einheit ist dann ab dem Mittagessen bis ''Open End'', d. h. so lange Interesse (und Kaffee) da ist.
 
 \paragraph{Kosten} Die Schulung an sich ist kostenlos, nur für das Mittagessen und Getränke sollten ein paar Euro mitgebracht werden.
 
@@ -34,17 +37,33 @@
 % Sorgt dafür, dass der Abstand zwischen paragraph und subparagraph nur so groß wie ein normaler Zeilenumbruch ist
 \setlength{\parskip}{-15pt}
 %
-\subparagraph{Techniker} Es wird zuerst einen kurzen ''Theorieteil'' zu Akustik, der Funktion von Mikrofonen und Lautsprechern, einigen Grundlagen zum Mischen und zur Bedienung von Mischpulten geben; danach werden wir uns dann ganz praktisch (also am Mischpult) damit beschäftigen, wie man das Beste an Verständlichkeit aus einer Stimme (von Moderator, Prediger, ...) holen kann und es wird viel Platz für Fragen und Diskussion geben.
+\subparagraph{Techniker} Wir werden uns zunächst die Geräte, mit denen wir arbeiten, näher anschauen. Anschließend beschäftigen wir uns damit, wie ein einfaches Setup aus Funkmikrofon und einem Laptop funktioniert. Danach werden wir uns dann ganz praktisch (also am Mischpult) damit beschäftigen, wie man das Beste an Verständlichkeit aus einer Stimme (von Moderator, Prediger, ...) holen kann.
 %
-\subparagraph{Musiker} \textbf{TODO} %TODO
+\subparagraph{Musiker} Zunächst wollen wir die Technik-Theorie besprechen, die ein Musiker zum Aufbau einer Band braucht. Danach werden wir uns das Thema Monitoring etwas näher anschauen und dann noch einige Praxistipps für eine gute Zusammenarbeit mit Technikern  und für einen klaren Sound weitergeben. Je nach Interesse können wir noch über Tipps für effektive Proben reden.
 
 % Paragraph-Abstand wieder resetten
-\setlength{\parskip}{0pt}
-\paragraph{Inhalt (zweite Einheit)} Die zweite Einheit richtet sich an alle Musiker, die in Bands mit Technik spielen wollen und an Techniker, die Bands abmischen wollen. Das wird fast ausschließlich ''hands on'', also ganz praktisch, stattfinden: Wir werden zusammen wie für einen normalen (Jugend-) Gottesdienst aufbauen, die Anlage einmessen, Soundcheck machen und je nachdem, ob Zeit und Interesse da ist, das Ganze für verschiedene Bandzusammenstellungen wiederholen oder eure Ideen ausprobieren.
+\setlength{\parskip}{-5pt}
+\paragraph{Inhalt (zweite Einheit)} Die zweite Einheit baut auf der ersten auf und richtet sich an alle Musiker, die in Bands mit Technik spielen wollen und an Techniker, die Bands abmischen wollen. Das wird fast ausschließlich ''hands on'', also ganz praktisch, stattfinden: Wir werden zusammen wie für einen normalen (Jugend-) Gottesdienst aufbauen, die Anlage einmessen, Soundcheck machen und je nachdem, ob Zeit und Interesse da ist, das Ganze für verschiedene Bandzusammenstellungen wiederholen oder eure Ideen ausprobieren.
 
 \paragraph{Mitbringen} Lust zu lernen sollte im Gepäck sein, gerne auch Fragen und eigenes Material (Mischpulte, Instrumente, Mikrofone etc.) -- dabei bitten wir darum, dass das Material deutlich gekennzeichnet ist, um es auseinander halten zu können.
+% Dirty Hack, damit der letzte Absatz nicht zu weit nach oben rutscht
+\setlength{\parskip}{0pt}
 
-Insbesondere eigene Instrumente sind interessant, weil wir uns dann zum Beispiel auch mit den Feinheiten der Mikrofonierung bei unterschiedlichen Instrumenten beschäftigen können.
-
-
+Insbesondere eigene Instrumente sind interessant, weil wir uns dann zum Beispiel auch mit den Feinheiten der Mikrofonierung bei unterschiedlichen Instrumenten beschäftigen können.\\\\
+\hrule\vspace{1em}
+\begin{center}
+\underline{\textbf{\Large Anmeldung zur Techniker- und Musikerschulung}}
+\end{center}
+Um uns die Planung zu erleichtern, bitten wir um eine \textbf{Anmeldung bis 05.06.15}, diese kann entweder auf Papier in der Grundstraße 6 in Reichenbach (adressiert an M. Seidel) eingeworfen werden oder per Mail an \href{mailto:timwuertele@posteo.de}{timwuertele@posteo.de} -- wichtig ist, dass folgende Informationen enthalten sind:\\
+\renewcommand{\labelitemi}{ }
+\begin{itemize}
+    \setlength\itemsep{1em}
+    \item Name \dotfill
+    \item Musiker/Techniker \dotfill
+    \item Ich bin zum Essen da (Allergien?) \dotfill
+    \item Ich bin auch zur zweiten Einheit da \dotfill
+    \item Ich spiele folgende Instrumente\footnote{Falls Musiker und zur zweiten Einheit da.} \dotfill
+    \item Ich bringe folgende Geräte/Instrumente mit \dotfill
+\end{itemize}
 \end{document}
+
